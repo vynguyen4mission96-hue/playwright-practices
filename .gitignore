@@ -17,3 +17,6 @@ Thumbs.db
 
 # Local editor settings (optional)
 # .vscode/
+
+# Separate Git repository
+/GitPractice/
