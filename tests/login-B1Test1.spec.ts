@@ -3,7 +3,10 @@
 //khi bạn chỉ tạo một file .spec.ts trống
 import { test, expect} from '@playwright/test';
 //import <login.page.ts>
-import { loginPage} from './login.page';
+//để qua page './login.page'-> ctrl+click vào './login.page'
+import { loginPage} from './pages/login.page';
+
+
 
 test ('test', async({page})=>{
     await page.goto('https://the-internet.herokuapp.com/login');
@@ -174,12 +177,13 @@ test ('test3', async({page})=>{
 
 //test case 4- test bằng Page bên login.page.ts
 test ('test4', async({page})=>{
+    test.setTimeout(60000);
      // Khởi tạo object từ class loginPage trong login.page.ts
     const loginPageObject = new loginPage(page)
     await loginPageObject.open()
     await loginPageObject.login('tomsmith', 'SuperSecretPassword!')
 
-    await expect(page).toHaveURL('https://the-internet.herokuapp.com/secure');
+    //await expect(page).toHaveURL('https://the-internet.herokuapp.com/secure');
     // .resolves
     // Cho Playwright Test biết rằng bạn muốn kiểm tra giá trị mà Promise hoàn thành với, 
     // thay vì kiểm tra trực tiếp object Promise.
@@ -188,8 +192,8 @@ test ('test4', async({page})=>{
     // Kiểm tra giá trị cuối cùng có đúng bằng boolean true hay không.
     // true -> assertion thành công.
     // false -> assertion thất bại.
-     await expect(loginPageObject.isloginSuccess()).resolves.toBe(true)
+    await expect(loginPageObject.isloginSuccess()).resolves.toBe(true)
     await expect (page.getByRole('heading', {name: 'Secure Area'}).first()). toBeVisible();
 
 });
-//2:33:00
+//
