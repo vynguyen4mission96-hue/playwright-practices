@@ -22,6 +22,7 @@ export class CheckboxPage{
            if (checkboxname== 'checkbox 1'){
     return this.page.getByRole('checkbox').first().isChecked()
         }
+        //xài if vì nó lỡ nó có checkbox 3
        if (checkboxname== 'checkbox 2') {
         // .uncheck() 
     return this.page.getByRole('checkbox').last().isChecked()
