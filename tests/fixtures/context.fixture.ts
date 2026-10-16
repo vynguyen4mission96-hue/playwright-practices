@@ -1,19 +1,17 @@
-import { expect, type Locator, type Page } from '@playwright/test';
+import {test as base, expect} from '@playwright/test'
+import { ContextMenuPage } from '../pages/context.page'
 
-export class ContextManuPAge{
-    readonly page: Page
-    constructor (page:Page){
-        this.page= page
-    }
-
-    async open(){
-        await this.page.goto('https://the-internet.herokuapp.com/context_menu')
-
-    }
-    async rightclick(){
-        const box= this.page.locator('#hot-spot')
-        await box.click({button: 'right'})
-    }
-
-
+type ContextMenuFixtures={
+    contextMenuPage: ContextMenuPage
 }
+
+export const test= base.extend<ContextMenuFixtures>({
+    contextMenuPage: async ({page}, use)=>{
+        const contextMenuPage= new ContextMenuPage(page)
+
+        await use(contextMenuPage)
+    }
+
+})
+
+export {expect}

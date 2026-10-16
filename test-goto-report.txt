@@ -1,0 +1,67 @@
+E:\Programming practice\1_playwright-project\e2e\example.spec.ts:3: test('has title', async ({ page }) => {
+E:\Programming practice\1_playwright-project\e2e\example.spec.ts:10: test('get started link', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\pages\bmi.page.ts:11: await this.page.goto('https://www.calculator.net/bmi-calculator.html')
+E:\Programming practice\1_playwright-project\tests\pages\checkboxes.page.ts:11: await this.page.goto('https://the-internet.herokuapp.com/checkboxes')
+E:\Programming practice\1_playwright-project\tests\pages\context.page.ts:10: await this.page.goto('https://the-internet.herokuapp.com/context_menu')
+E:\Programming practice\1_playwright-project\tests\pages\forgotpassword.page.ts:9: await this.page.goto('https://the-internet.herokuapp.com/forgot_password')
+E:\Programming practice\1_playwright-project\tests\pages\login.page.ts:19: await this.page.goto('https://the-internet.herokuapp.com/login')
+E:\Programming practice\1_playwright-project\tests\pages\table.page.ts:11: await this.page.goto('https://the-internet.herokuapp.com/tables')
+E:\Programming practice\1_playwright-project\tests\basicAuth.spec.ts:3: test('login successfully with valid credential', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\BMI-1.spec.ts:4: test ('verify body mass index(BMI) calculation', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\BMI-2.spec.ts:21: test (`expert bmi=${expectBMI} with ${age}, ${gender}, ${height}, ${weight}`, async({bmiPage})=>{
+E:\Programming practice\1_playwright-project\tests\checkboxes-2.spec.ts:5: test('verify checkboxes', async({CheckboxPage})=>{
+E:\Programming practice\1_playwright-project\tests\checkboxes.spec.ts:5: test('verify check sucessfully', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\Context-2.spec.ts:3: test('right click context menu', async ({ page, contextMenuPage }) => {
+E:\Programming practice\1_playwright-project\tests\ContextClick-RightClick.spec.ts:3: test('right click context menu', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\Downloadfile.spec.ts:7: test('download a file', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Downloadfile.spec.ts:25: test('download multiple files', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\DragDrop.spec.ts:3: test('drag and drop', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\dropdown.spec.ts:5: test('1.verify selection in dropdown', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\dropdown.spec.ts:17: test('2.verify selection in dropdown', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\dropdown.spec.ts:34: test('3.selecting multiple selections', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\dropdown.spec.ts:48: test('4.selecting multiple checkboxes', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\EntryAd-1.spec.ts:3: test('Entry ad popup', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\example.spec.ts:3: test('has title', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\example.spec.ts:10: test('get started link', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\forgotPassword.spec.ts:4: test('verify forgot password form submits', async({forgotPasswordPage})=>
+E:\Programming practice\1_playwright-project\tests\Frame.spec.ts:3: test('verify nested frames content', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Handlebrokenimages.spec.ts:3: test('verify broken image', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\HandleRandompopup.spec.ts:2: test('verify able select depart date', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Handle_JSAlertPopup.spec.ts:3: test('js alert', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Handle_JSAlertPopup.spec.ts:18: test('js confirm =>cancel', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Handle_JSAlertPopup.spec.ts:33: test('js confirm =>OK', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\Handle_JSAlertPopup.spec.ts:51: test('js prompt ', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\HorizontalSlide.spec.ts:3: test('change range slider value', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\Hover.spec.ts:3: test('dropdown test', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\hyperlinks.spec.ts:4: test('1.verify hyperlink', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\InfinityScroll.spec.ts:3: test('change infinity scroll down', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\login-B1Test1.spec.ts:11: test ('test', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\login-B1Test1.spec.ts:128: test ('test2', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\login-B1Test1.spec.ts:155: test ('test3', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\login-B1Test1.spec.ts:179: test ('test4', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\login-B2Test2.spec.ts:15: test ('login sucessfully', async({loginPage, getcurrentUrl})=>{
+E:\Programming practice\1_playwright-project\tests\login-B2Test2.spec.ts:29: test ('invalid password', async({loginPage})=>{
+E:\Programming practice\1_playwright-project\tests\login-B2Test2.spec.ts:46: test ('invalid username', async({loginPage})=>{
+E:\Programming practice\1_playwright-project\tests\login-B3Test3.spec.ts:7: test('login successfully', async ({ loginPage, getcurrentUrl }) => {
+E:\Programming practice\1_playwright-project\tests\login-B3Test3.spec.ts:52: test(`login with errormassge ${errorMessage} for username ${username} and password: ${password}`, async ({ loginPage }) => {
+E:\Programming practice\1_playwright-project\tests\login-B3Test3.spec.ts:84: // test ('invalid password', async({loginPage})=>{
+E:\Programming practice\1_playwright-project\tests\login-B3Test3.spec.ts:101: // test ('invalid username', async({loginPage})=>{
+E:\Programming practice\1_playwright-project\tests\table.spec.ts:13: test('3.verify max due person full name', async ({ tablePage }) => {
+E:\Programming practice\1_playwright-project\tests\TakeScreenshot.spec.ts:4: test('full page screenshot', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\TakeScreenshot.spec.ts:17: test('element screenshot', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\TakeScreenshot.spec.ts:29: test('visual test', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\todos.spec.ts:10: // test(...) = t?o m?t TEST CASE.
+E:\Programming practice\1_playwright-project\tests\todos.spec.ts:15: test('test', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\todos.spec.ts:120: test ('verify table of contents', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\Uploadfile.spec.ts:4: test('upload a file', async ({page}) => {
+E:\Programming practice\1_playwright-project\tests\webtable-1.spec.ts:4: test('1.verify max due person name', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\webtable-1.spec.ts:57: test('2.Find person with maximum due', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\webtable-2.spec.ts:4: test('1.verify max due person name', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\webtable-2.spec.ts:57: test('2.Find person with minimum due', async({page})=>{
+E:\Programming practice\1_playwright-project\tests\webtable-2.spec.ts:110: //test('test 1', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable-2.spec.ts:114: //test('test 2', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable-3.spec.ts:37: test('1.verify max due person name', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable-3.spec.ts:46: test('2.verify min due person name', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable-3.spec.ts:57: test('3.verify max due person full name', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable.spec - Copy.ts:15: test('1.verify max due person name', async ({ page }) => {
+E:\Programming practice\1_playwright-project\tests\webtable.spec - Copy.ts:620: test('2.Find person with maximum due', async ({ page }) => {

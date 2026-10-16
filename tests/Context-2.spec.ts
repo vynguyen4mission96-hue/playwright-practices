@@ -1,15 +1,21 @@
-import {test, expect} from '@playwright/test';
+import {test, expect} from './fixtures/context.fixture';
 
-test('right click context menu', async ({ page }) => {
+test('right click context menu', async ({ page, contextMenuPage }) => {
     test.setTimeout(60000);
+    await contextMenuPage.open()
+    const dialogPromise= page.waitForEvent('dialog')
+   
+    //rightclick() viết thường, không viết hoa
+    //vì bên context.page.ts khau báo như vậy- đọc cho kỹ
+    await contextMenuPage.rightclick()
+    const dialog = await dialogPromise
+    //console để debug
+     console.log('Dialog message:', dialog.message());
 
-    await page.goto('https://the-internet.herokuapp.com/context_menu');
+    try{
+        expect(dialog.message()).toBe('You selected a context menu')
+    }finally{
+        await dialog.dismiss()
+    }
 
-    const box = page.locator('#hot-spot');
-    await box.click({ button: 'right' }); 
-    
-    page.on('dialog', async dialog => {
-        expect(dialog.message()).toBe('You selected a context menu');
-        await dialog.dismiss();
-    });
 })
