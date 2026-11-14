@@ -28,5 +28,11 @@ expect(reqs.status()).toBe(200)
 const responseBody= await reqs.json()
  // 5. In Response Body ra console để kiểm tra thông tin booking vừa được tạo
 console.log(responseBody)
+//Extract booking object từ Response Body
+const {booking}= responseBody
+//So sánh dữ liệu booking server trả về với dữ liệu đã gửi
+expect (booking).toEqual(bookingData)
+// Kiểm tra Response có chứa bookingid
+expect(responseBody).toHaveProperty("bookingid")
 
 })
